@@ -17,8 +17,8 @@ public class SeleniumWebDriverLocators_Part3 {
 	public WebDriver driver;
 	
 	@Test
-  	private void HomePageFlickr() throws InterruptedException {
-		System.out.println("launching chrome browser"); 
+  	public void Flickr() throws InterruptedException {
+	  	System.out.println("launching chrome browser"); 
 	  	System.setProperty("webdriver.chrome.driver", driverPath);
 	  	System.out.println("Openning chrome browsers");
 	  	driver = new ChromeDriver();
@@ -33,43 +33,19 @@ public class SeleniumWebDriverLocators_Part3 {
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("login-password")));
 		driver.findElement(By.id("login-password")).sendKeys("Sakuraandusagi*123");
 		driver.findElement(By.cssSelector("form > button")).click();
-	}
-		
-	@Test
-	private void YouTool() throws InterruptedException {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		//Thread.sleep(3000);
+		//WebDriverWait waiter2 = new WebDriverWait(driver, 3);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".moola-container.feed-ba.upsell-fallback")));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".filter-menu-text")));
-		WebElement titleYou = driver.findElement(By.cssSelector(".filter-menu-text"));
+		WebElement titleAllActivity = driver.findElement(By.cssSelector(".filter-menu-text"));
 		//WebElement titleAlbum = driver.findElement(By.cssSelector("Album"));
 		Actions builder = new Actions(driver);
 		Action seriesOfActions = builder
-				.moveToElement(titleYou)
+				.moveToElement(titleAllActivity)
 				//.moveToElement(titleAlbum)
 				.click()
 				.build();
 		seriesOfActions.perform();
-		
-	
-	}
-	
-	@Test
-	public void YouTool1() {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".moola-container.feed-ba.upsell-fallback")));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".filter-menu-text")));
-		WebElement titleYou = driver.findElement(By.cssSelector(".filter-menu-text"));
-		//WebElement titleAlbum = driver.findElement(By.cssSelector("Album"));
-		Actions builder = new Actions(driver);
-		Action seriesOfActions = builder
-				.moveToElement(titleYou)
-				//.moveToElement(titleAlbum)
-				.click()
-				.build();
-		seriesOfActions.perform();
-	}
-}
-		
 		//driver.findElement(By.linkText("You")).click();
 		
 		
@@ -79,6 +55,8 @@ public class SeleniumWebDriverLocators_Part3 {
 	  	// single_select5f89923f22a521.selectByVisibleText("Hướng dẫn sử dụng trang Học trực tuyến / Training 10 / 2019");
 	  	//single_select5f89923f22a521.selectByIndex(2);
 	  	//Assert.assertEquals(actualTitle, expectedTitle);
+  	}
+}
 
 /* String baseUrl = "https://www.flickr.com/";
 

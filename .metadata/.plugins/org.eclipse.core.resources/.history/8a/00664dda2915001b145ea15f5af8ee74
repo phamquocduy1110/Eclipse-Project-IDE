@@ -40,33 +40,16 @@ public class SeleniumWebDriverLocators_Part3 {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".moola-container.feed-ba.upsell-fallback")));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".filter-menu-text")));
-		WebElement titleYou = driver.findElement(By.cssSelector(".filter-menu-text"));
+		WebElement titleAllActivity = driver.findElement(By.cssSelector(".filter-menu-text"));
 		//WebElement titleAlbum = driver.findElement(By.cssSelector("Album"));
 		Actions builder = new Actions(driver);
 		Action seriesOfActions = builder
-				.moveToElement(titleYou)
+				.moveToElement(titleAllActivity)
 				//.moveToElement(titleAlbum)
 				.click()
 				.build();
 		seriesOfActions.perform();
-		
-	
-	}
-	
-	@Test
-	public void YouTool1() {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".moola-container.feed-ba.upsell-fallback")));
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".filter-menu-text")));
-		WebElement titleYou = driver.findElement(By.cssSelector(".filter-menu-text"));
-		//WebElement titleAlbum = driver.findElement(By.cssSelector("Album"));
-		Actions builder = new Actions(driver);
-		Action seriesOfActions = builder
-				.moveToElement(titleYou)
-				//.moveToElement(titleAlbum)
-				.click()
-				.build();
-		seriesOfActions.perform();
+		driver.navigate().back();
 	}
 }
 		

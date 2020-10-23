@@ -54,7 +54,7 @@ public class SeleniumWebDriverLocators_Part3 {
 	}
 	
 	@Test
-	public void YouTool1() {
+	public void YouTool() {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".moola-container.feed-ba.upsell-fallback")));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".filter-menu-text")));

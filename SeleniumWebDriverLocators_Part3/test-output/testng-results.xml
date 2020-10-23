@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-23T17:34:06 ICT" name="Default suite" finished-at="2020-10-23T17:35:15 ICT" duration-ms="68125">
+  <suite started-at="2020-10-23T18:53:13 ICT" name="Default suite" finished-at="2020-10-23T18:54:00 ICT" duration-ms="47414">
     <groups>
     </groups>
-    <test started-at="2020-10-23T17:34:06 ICT" name="Default test" finished-at="2020-10-23T17:35:15 ICT" duration-ms="68125">
+    <test started-at="2020-10-23T18:53:13 ICT" name="Default test" finished-at="2020-10-23T18:54:00 ICT" duration-ms="47414">
       <class name="SeleniumWebDriverLocators_Part3.SeleniumWebDriverLocators_Part3">
-        <test-method signature="Flickr()[pri:0, instance:SeleniumWebDriverLocators_Part3.SeleniumWebDriverLocators_Part3@6ab778a]" started-at="2020-10-23T17:34:06 ICT" name="Flickr" finished-at="2020-10-23T17:35:15 ICT" duration-ms="68093" status="PASS">
+        <test-method signature="HomePageFlickr()[pri:0, instance:SeleniumWebDriverLocators_Part3.SeleniumWebDriverLocators_Part3@37883b97]" started-at="2020-10-23T18:53:13 ICT" name="HomePageFlickr" finished-at="2020-10-23T18:53:50 ICT" duration-ms="37261" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Flickr -->
+        </test-method> <!-- HomePageFlickr -->
+        <test-method signature="YouTool()[pri:0, instance:SeleniumWebDriverLocators_Part3.SeleniumWebDriverLocators_Part3@37883b97]" started-at="2020-10-23T18:53:50 ICT" name="YouTool" finished-at="2020-10-23T18:54:00 ICT" duration-ms="10110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- YouTool -->
       </class> <!-- SeleniumWebDriverLocators_Part3.SeleniumWebDriverLocators_Part3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
