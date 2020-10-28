@@ -5,7 +5,9 @@
     <classes>
       <class name="SeleniumWebDriverLocators_Part3.SeleniumWebDriverLocators_Part3">
         <methods>
-          <include name="HocTrucTuyenVanLang"/>
+          <include name="HomePageFlickr"/>
+          <include name="UpdateAccountInformation"/>
+          <include name="CloseBrowser"/>
         </methods>
       </class> <!-- SeleniumWebDriverLocators_Part3.SeleniumWebDriverLocators_Part3 -->
     </classes>
