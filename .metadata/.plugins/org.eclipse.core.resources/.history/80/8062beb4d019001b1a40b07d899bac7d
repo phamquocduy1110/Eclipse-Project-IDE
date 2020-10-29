@@ -79,13 +79,13 @@ public class SeleniumWebDriverLocators_Part3 {
 			.click()
 			.build();
 		seriesOfActions.perform();
+		CloseBrowser();
 		
-		driver.wait(30);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("firstname")));
-	  	//3.Send 'Username' value to the field
-		driver.findElement(By.id("firstname")).sendKeys("SSakura Ayame Kinomoto");
-		//driver.findElement(By.cssSelector("form > button")).click();
-		
+	}
+	
+	@Test
+	public void CloseBrowser() throws InterruptedException {
+		driver.close();
 	}
 } 
 		

@@ -5,7 +5,8 @@
     <classes>
       <class name="SeleniumWebDriverLocators_Part3.SeleniumWebDriverLocators_Part3">
         <methods>
-          <include name="Flickr"/>
+          <include name="HomePageFlickr"/>
+          <include name="UpdateAccountInformation"/>
         </methods>
       </class> <!-- SeleniumWebDriverLocators_Part3.SeleniumWebDriverLocators_Part3 -->
     </classes>
